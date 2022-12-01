@@ -15,8 +15,8 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        $question =Question::all();
-        return view('question',$question);
+        $lst =Question::all();
+        return view('pages/questions-index',['lst'=>$lst]);
     }
 
     /**

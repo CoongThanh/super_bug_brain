@@ -45,7 +45,7 @@
                                                 <div class="d-flex px-3 py-1">
                                                    
                                                     <div class="d-flex flex-column justify-content-center">
-                                                        <h7 class="mb-0 text-sm">1</h7>
+                                                        <h6 class="mb-0 text-sm">1</h6>
                                                         
                                                     </div>
                                                 </div>
@@ -64,19 +64,63 @@
                                                 <span class="badge badge-sm bg-gradient-secondary">Không hoạt động</span>
                                             </td> -->
                                             <td class="align-middle">
+                                                <a rel="tooltip" class="btn btn-success btn-link"
+                                                    href="" data-original-title=""
+                                                    title="">
+                                                    <i class="material-icons">edit</i>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                            
+                                                <button type="button" class="btn btn-danger btn-link"
+                                                data-original-title="" title="">
+                                                <i class="material-icons">close</i>
+                                                <div class="ripple-container"></div>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                       @foreach ($field as $lst)
+                                       {{-- <a href="{{route('field_question.index')}}"></a> --}}
+                                       <tr>
+                                        <td>
+                                            <div class="d-flex px-3 py-1">
+                                               
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">{{ $lst->id}}</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="text-secondary text-xs font-weight-bold">{{$lst->namefield}}</span>
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <span
+                                                class="text-secondary text-xs font-weight-bold">{{$lst->level_id}}</span>
+                                        </td>
+                                        <td class="align-middle text-center text-sm">
+                                            <span class="badge badge-sm bg-gradient-success">{{$lst->status}}</span>
+                                        </td>
+                                        <!-- <td class="align-middle text-center text-sm">
+                                            <span class="badge badge-sm bg-gradient-secondary">Không hoạt động</span>
+                                        </td> -->
+                                        <td class="align-middle">
                                             <a rel="tooltip" class="btn btn-success btn-link"
                                                 href="" data-original-title=""
                                                 title="">
                                                 <i class="material-icons">edit</i>
                                                 <div class="ripple-container"></div>
                                             </a>
-                                            
+                                        
                                             <button type="button" class="btn btn-danger btn-link"
                                             data-original-title="" title="">
                                             <i class="material-icons">close</i>
                                             <div class="ripple-container"></div>
-                                        </button>
-                                       
+                                            </button>
+                                        </td>
+                                    </tr>
+                                  
+                                       @endforeach
+                                     
                                     </tbody>
                                 </table>
                             </div>

@@ -18,10 +18,6 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         // \App\Models\User::find(1)-update(['is_admin'=>true]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
 
         // Lưu ý thứ tự khi có khóa ngoại
         $this-> call([

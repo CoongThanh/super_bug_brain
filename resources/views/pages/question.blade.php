@@ -64,41 +64,41 @@
                                         @section('content')
                                         
                                   
-                                        @foreach ($question as $qs)
-                                        <a href="{{route('question.create')}}"></a>
+                                        @foreach ($question as $lst)
+                                        <a href="{{route('question.index')}}"></a>
                                         <tr>
                                             <td>
                                                 <div class="d-flex px-3 py-1">
                                                     
                                                     <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">{{$qs->id}}</h6>
+                                                        <h6 class="mb-0 text-sm">{{$lst->id}}</h6>
                                                         
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">{{ $qs->fullcontent}}</span>
+                                                <span class="text-secondary text-xs font-weight-bold">{{ $lst->fullcontent}}</span>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">{{ $qs->answerA}}</span>
+                                                <span class="text-secondary text-xs font-weight-bold">{{ $lst->answerA}}</span>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">{{ $qs->answerB}}</span>
+                                                <span class="text-secondary text-xs font-weight-bold">{{ $lst->answerB}}</span>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">{{ $qs->answerC}}</span>
+                                                <span class="text-secondary text-xs font-weight-bold">{{ $lst->answerC}}</span>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">{{ $qs->answerD}}</span>
+                                                <span class="text-secondary text-xs font-weight-bold">{{ $lst->answerD}}</span>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">{{ $qs->answer}}</span>
+                                                <span class="text-secondary text-xs font-weight-bold">{{ $lst->answer}}</span>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <span class="text-secondary text-xs font-weight-bold">Văn học</span>
                                             </td>
                                             <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">{{ $qs->Status}}</span>
+                                                <span class="badge badge-sm bg-gradient-success">{{ $lst->Status}}</span>
                                             </td>
                                             <td class="align-middle">
                                                 <a rel="tooltip" class="btn btn-success btn-link"
