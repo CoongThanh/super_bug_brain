@@ -33,8 +33,9 @@ Route::post('verify', [SessionsController::class, 'show'])->middleware('guest');
 Route::post('reset-password', [SessionsController::class, 'update'])->middleware('guest')->name('password.update');
 
 
-Route::post('question', [QuestionController::class, 'show'])->middleware('guest');
-Route::post('field_questions', [FieldQuestionController::class, 'show'])->middleware('guest');
+Route::post('/question', [QuestionController::class, 'show'])->middleware('guest');
+// Route::post('/field-questions', [FieldQuestionController::class, 'index']);
+Route::resource('/field-questions', FieldQuestionController::class);
 
 
 Route::get('verify', function () {

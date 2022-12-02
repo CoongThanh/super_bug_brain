@@ -115,7 +115,7 @@
                                             </button>
                                             </td>
                                             
-                                        </tr> --}}
+                                        </tr> 
                                         @endforeach
                                         <tr>
                                             <td>
