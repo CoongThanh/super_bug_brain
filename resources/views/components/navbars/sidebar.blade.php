@@ -42,7 +42,7 @@
                 <a class="nav-link text-white {{ $activePage == 'field-questions' ? ' active bg-gradient-primary' : '' }} "
                     href="{{ route('field-questions') }}">
                     {{-- <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">question</i>
+                        <i class="material-icons opacity-10">field</i>
                     </div> --}}
                     <span class="nav-link-text ms-1">Lĩnh vực</span>
                 </a>

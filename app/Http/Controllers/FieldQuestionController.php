@@ -15,6 +15,7 @@ class FieldQuestionController extends Controller
      */
     public function index()
     {
+        
         $lst =FieldQuestion::all();
         return view('pages.field-questions',['lst'=>$lst]);
     }
