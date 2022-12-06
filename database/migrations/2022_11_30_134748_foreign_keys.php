@@ -13,7 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('field_questions', function (Blueprint $table) {
+            $table->foreignId('questions')->constrained();
+        });
     }
 
     /**
