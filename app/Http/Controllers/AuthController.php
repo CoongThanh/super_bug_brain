@@ -4,8 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Contracts\Auth\CanResetPassword;
 
 class AuthController extends Controller
 {
@@ -27,6 +34,7 @@ class AuthController extends Controller
             'email' => $req->email,
             'password' => Hash::make($req->password)
         ]);
+        $user->save();
         $token = $user->createToken('Personal Access Token')->plainTextToken;
         $response = ['user' => $user, 'token' => $token];
         return response()->json($response, 200);
@@ -39,9 +47,12 @@ class AuthController extends Controller
             'email' => 'required',
             'password' => 'required|string'
         ];
+        
         $req->validate($rules);
         // find user email in users table
         $user = User::where('email', $req->email)->first();
+        dd($user && Hash::check($req->password, $user->password));
+        // dd($user->password);
         // if user email found and password is correct
         if ($user && Hash::check($req->password, $user->password)) {
             $token = $user->createToken('Personal Access Token')->plainTextToken;
@@ -49,6 +60,16 @@ class AuthController extends Controller
             return response()->json($response, 200);
         }
         $response = ['message' => 'Incorrect email or password'];
+        // if($user) {
+        //     if ($req->password == $user->password) {
+        //         $req->session()->put('loginId',$user->id);
+        //         return response()->json($response, 200);
+        //     } else {
+        //         $response = ['message' => 'Incorrect email or password'];
+        //     }
+        // } else {
+        //     $response = ['message' => 'Incorrect email or password'];
+        // }
         return response()->json($response, 400);
     }
 }
