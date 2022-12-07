@@ -14,10 +14,9 @@ class FieldQuestionController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        
-        $lst =FieldQuestion::all();
-        return view('pages.field-questions',['lst'=>$lst]);
+    {  
+        $fieldquestion = FieldQuestion::all();
+        return view('pages.fieldquestion.index',['fieldquestion'=>$fieldquestion]);
     }
 
     /**
@@ -27,7 +26,7 @@ class FieldQuestionController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.fieldquestion.create');
     }
 
     /**

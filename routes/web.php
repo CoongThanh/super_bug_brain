@@ -33,9 +33,8 @@ Route::post('verify', [SessionsController::class, 'show'])->middleware('guest');
 Route::post('reset-password', [SessionsController::class, 'update'])->middleware('guest')->name('password.update');
 
 
-Route::post('/question', [QuestionController::class])->middleware('guest');
-// Route::post('/field-questions', [FieldQuestionController::class, 'index']);
-Route::post('/field-questions', FieldQuestionController::class)->middleware('guest');
+Route::resource("/questions", QuestionController::class);
+Route::resource('/fieldquestions', FieldQuestionController::class);
 
 
 Route::get('verify', function () {
@@ -49,12 +48,7 @@ Route::post('sign-out', [SessionsController::class, 'destroy'])->middleware('aut
 Route::get('profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
 Route::post('user-profile', [ProfileController::class, 'update'])->middleware('auth');
 Route::group(['middleware' => 'auth'], function () {
-	Route::get('question', function () {
-		return view('pages.question');
-	})->name('question');
-	Route::get('field-questions', function () {
-		return view('pages.field-questions');
-	})->name('field-questions');
+	
 	Route::get('billing', function () {
 		return view('pages.billing');
 	})->name('billing');
