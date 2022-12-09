@@ -34,7 +34,7 @@
                                         <td class="px-4">{{ $loop->iteration }}</td>
                                         <td class="px-4">{{ $item->namefield }}</td>
                                         @if ($item->status == 1)
-                                        <td class="px-4">Hoạt động</td>
+                                        <td class="px-4">Dang Hoạt động</td>
                                         @else
                                         <td class="px-4">Không hoạt động</td>
                                         @endif
