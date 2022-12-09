@@ -43,7 +43,9 @@
                                 <div class="card-body">
                                     <form role="form" method="POST" action="{{ route('login') }}" class="text-start">
                                         @csrf
+                                        
                                         @if (Session::has('status'))
+                                        <input  value="{{ csrf_token() }}" />
                                         <div class="alert alert-success alert-dismissible text-white" role="alert">
                                             <span class="text-sm">{{ Session::get('status') }}</span>
                                             <button type="button" class="btn-close text-lg py-3 opacity-10"
@@ -66,10 +68,10 @@
                                         @error('password')
                                         <p class='text-danger inputerror'>{{ $message }} </p>
                                         @enderror
-                                        <div class="form-check form-switch d-flex align-items-center my-3">
+                                        <!-- <div class="form-check form-switch d-flex align-items-center my-3">
                                             <input class="form-check-input" type="checkbox" id="rememberMe">
                                             <label class="form-check-label mb-0 ms-2" for="rememberMe">Lưu tài khoản</label>
-                                        </div>
+                                        </div> -->
                                         <div class="text-center">
                                             <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Đăng nhập</button>
                                         </div>

@@ -24,12 +24,12 @@ Route::get('/', function () {
     return view('welcome');
 });     
 
-Route::get('/', function () {return redirect('sign-in');})->middleware('guest');
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
-Route::get('sign-up', [RegisterController::class, 'create'])->middleware('guest')->name('register');
+Route::get('/', function () {return redirect('sign-in');});
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('sign-up', [RegisterController::class, 'create'])->name('register');
 Route::post('sign-up', [RegisterController::class, 'store'])->middleware('guest');
-Route::get('sign-in', [SessionsController::class, 'create'])->middleware('guest')->name('login');
-Route::post('sign-in', [SessionsController::class, 'store'])->middleware('guest');
+Route::get('sign-in', [SessionsController::class, 'create'])->name('login');
+Route::post('sign-in', [SessionsController::class, 'store']);
 Route::post('verify', [SessionsController::class, 'show'])->middleware('guest');
 Route::post('reset-password', [SessionsController::class, 'update'])->middleware('guest')->name('password.update');
 

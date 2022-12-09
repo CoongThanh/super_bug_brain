@@ -32,11 +32,14 @@ class AuthController extends Controller
         $user = User::create([
             'name' => $req->name,
             'email' => $req->email,
-            'password' => Hash::make($req->password)
+            'password' => Hash::make($req->password),
+            'role'=> 0,
+            'status'=> 1
         ]);
+        
         $user->save();
         $token = $user->createToken('Personal Access Token')->plainTextToken;
-        $response = ['user' => $user, 'token' => $token];
+        $response = ['users' => $user, 'token' => $token];
         return response()->json($response, 200);
     }
 
@@ -47,29 +50,17 @@ class AuthController extends Controller
             'email' => 'required',
             'password' => 'required|string'
         ];
-        
         $req->validate($rules);
         // find user email in users table
         $user = User::where('email', $req->email)->first();
-        dd($user && Hash::check($req->password, $user->password));
-        // dd($user->password);
+        // dd($user && Hash::check($req->password, $user->password));
         // if user email found and password is correct
         if ($user && Hash::check($req->password, $user->password)) {
             $token = $user->createToken('Personal Access Token')->plainTextToken;
-            $response = ['user' => $user, 'token' => $token];
+            $response = ['users' => $user, 'token' => $token];
             return response()->json($response, 200);
         }
         $response = ['message' => 'Incorrect email or password'];
-        // if($user) {
-        //     if ($req->password == $user->password) {
-        //         $req->session()->put('loginId',$user->id);
-        //         return response()->json($response, 200);
-        //     } else {
-        //         $response = ['message' => 'Incorrect email or password'];
-        //     }
-        // } else {
-        //     $response = ['message' => 'Incorrect email or password'];
-        // }
         return response()->json($response, 400);
     }
 }
