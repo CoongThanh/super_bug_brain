@@ -10,5 +10,5 @@ class FieldQuestion extends Model
     use HasFactory;
     protected $table = 'field_questions';
     protected $primaryKey = 'id';
-    protected $fillable = ['namefield', 'level_id', 'status'];
+    protected $fillable = ['namefield', 'status'];
 }

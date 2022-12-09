@@ -3,16 +3,21 @@
 <div class="card">
   <div class="card-header">Thêm lĩnh vực</div>
   <div class="card-body">
-      
-      <form action="{{ url('fieldquestion') }}" method="post">
-        {!! csrf_field() !!}
-        <label>Name</label><br>
-        <input type="text" name="name" id="name" class="form-control"><br>
-        <label>Address</label><br>
-        <input type="text" name="address" id="address" class="form-control"><br>
-        <label>Mobile</label><br>
-        <input type="text" name="mobile" id="mobile" class="form-control"><br>
-        <input type="submit" value="Save" class="btn btn-success"><br>
+    
+      <form action="{{ url('fieldquestions') }}" method="post">
+        {!! csrf_field() !!}   
+          <div class="form-group">
+            <label>Tên lĩnh vực</label> 
+            <input type="text" name="namefield" id="namefield" class="form-control px-1" placeholder="Nhập tên lĩnh vực"> 
+          </div>
+          <div class="col-3 mb-3 form-group">
+              <label>Trạng thái</label> 
+                <select name="status" id="status" class="form-select px-1 ">
+                  <option value="1">Hoạt động</option>
+                  <option value="0">Không hoạt động</option>
+              </select>
+          </div>
+        <input type="submit" value="Save" class="btn btn-success"> 
     </form>
   
   </div>

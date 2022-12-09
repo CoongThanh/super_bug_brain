@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\FieldQuestion;
 use App\Http\Requests\StoreFieldQuestionRequest;
 use App\Http\Requests\UpdateFieldQuestionRequest;
+use Illuminate\Http\Request;
 
 class FieldQuestionController extends Controller
 {
@@ -27,6 +28,7 @@ class FieldQuestionController extends Controller
     public function create()
     {
         return view('pages.fieldquestion.create');
+
     }
 
     /**
@@ -35,9 +37,14 @@ class FieldQuestionController extends Controller
      * @param  \App\Http\Requests\StoreFieldQuestionRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreFieldQuestionRequest $request)
+    public function store(Request $request)
     {
-        //
+        // $fieldquestion::create($request->all());
+        // return redirect()->route('pages.fieldquestion.index')->with('thongbao','Thêm lĩnh vực thành công!');
+
+        $input = $request->all();
+        FieldQuestion::create($input);
+        return redirect('fieldquestions')->with('thongbao', 'Thêm lĩnh vực thành công');  
     }
 
     /**
@@ -57,9 +64,10 @@ class FieldQuestionController extends Controller
      * @param  \App\Models\FieldQuestion  $fieldQuestion
      * @return \Illuminate\Http\Response
      */
-    public function edit(FieldQuestion $fieldQuestion)
+    public function edit($id)
     {
-        //
+        $fieldquestion = FieldQuestion::find($id);
+        return view('pages.fieldquestion.edit')->with('fieldquestion', $fieldquestion);
     }
 
     /**

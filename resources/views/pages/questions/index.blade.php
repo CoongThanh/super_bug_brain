@@ -2,7 +2,7 @@
 @section('content-question')
     <div class="container">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
                         <h3>Câu hỏi</h3>
@@ -32,15 +32,15 @@
                                 <tbody>
                                 @foreach($questions as $item)
                                     <tr>
-                                        <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->fullcontent }}</td>
-                                        <td>{{ $item->answerA }}</td>
-                                        <td>{{ $item->answerB }}</td>
-                                        <td>{{ $item->answerC }}</td>
-                                        <td>{{ $item->answerD }}</td>
-                                        <td>{{ $item->answer }}</td>
-                                        {{-- <td>{{ $item->fieldquestions_id }}</td> --}}
-                                        <td>{{ $item->status }}</td>
+                                        <td class="px-4">{{ $loop->iteration }}</td>
+                                        <td class="px-4">{{ $item->fullcontent }}</td>
+                                        <td class="px-4">{{ $item->answerA }}</td>
+                                        <td class="px-4">{{ $item->answerB }}</td>
+                                        <td class="px-4">{{ $item->answerC }}</td>
+                                        <td class="px-4">{{ $item->answerD }}</td>
+                                        <td class="px-4">{{ $item->answer }}</td>
+                                        <td class="px-4">{{ $item->fieldquestions_id }}</td> 
+                                        <td class="px-4">{{ $item->status }}</td>
                                        
                                     </tr>
                                 @endforeach

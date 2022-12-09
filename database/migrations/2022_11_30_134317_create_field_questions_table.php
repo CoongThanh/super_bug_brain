@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('field_questions', function (Blueprint $table) {
             $table->id();
             $table->string('namefield',50);
-            $table->integer('level_id');
+            //$table->integer('level_id');
             $table->integer('status');
             $table->timestamps();
         });

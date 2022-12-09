@@ -48,7 +48,8 @@ class QuestionController extends Controller
      */
     public function show(Question $question)
     {
-        //
+        // $questions = Question::all();
+        // return view('pages.questions.show')->with('questions', $questions);
     }
 
     /**
