@@ -26,7 +26,7 @@ class FieldQuestionController extends Controller
      */
     public function create()
     {
-        return view('pages.fieldquestion.create');
+        return view('/pages.fieldquestion.create');
     }
 
     /**
