@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Question;
 use App\Http\Requests\StoreQuestionRequest;
 use App\Http\Requests\UpdateQuestionRequest;
+use Illuminate\Http\Request;
 
 class QuestionController extends Controller
 {
@@ -35,9 +36,11 @@ class QuestionController extends Controller
      * @param  \App\Http\Requests\StoreQuestionRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreQuestionRequest $request)
+    public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Question::create($input);
+        return redirect('questions')->with('thongbao', 'Thêm câu hỏi thành công');  
     }
 
     /**
@@ -46,10 +49,10 @@ class QuestionController extends Controller
      * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function show(Question $question)
+    public function show($id)
     {
-        // $questions = Question::all();
-        // return view('pages.questions.show')->with('questions', $questions);
+        $question = Question::find($id);
+        return view('pages.questions.show')->with('question', $question);
     }
 
     /**
@@ -58,9 +61,10 @@ class QuestionController extends Controller
      * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function edit(Question $question)
+    public function edit($id)
     {
-        //
+        $question = Question::find($id);
+        return view('pages.questions.edit')->with('question', $question);
     }
 
     /**
@@ -70,9 +74,12 @@ class QuestionController extends Controller
      * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateQuestionRequest $request, Question $question)
+    public function update(Request $request, $id)
     {
-        //
+        $question = Question::find($id);
+        $input = $request->all();
+        $question->update($input);
+        return redirect('questions')->with('thongbao', 'Cập nhật câu hỏi thành công');  
     }
 
     /**
@@ -81,8 +88,9 @@ class QuestionController extends Controller
      * @param  \App\Models\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Question $question)
-    {
-        //
+    public function destroy($id)
+    {   
+        Question::destroy($id);
+        return redirect('questions')->with('question', 'Xóa câu hỏi thành công');  
     }
 }

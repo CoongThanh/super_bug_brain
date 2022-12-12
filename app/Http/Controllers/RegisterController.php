@@ -33,6 +33,7 @@ class RegisterController extends Controller
         ];
         
         
+        
         $user = User::create([
             'name' => $req->name,
             'email' => $req->email,
@@ -40,7 +41,6 @@ class RegisterController extends Controller
             'role'=> 1,
             'status'=> 1
         ]);
-        
         $user->save();
         $token = $user->createToken('Personal Access Token')->plainTextToken;
         return redirect('/sign-in');

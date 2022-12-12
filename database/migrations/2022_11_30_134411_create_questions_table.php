@@ -15,13 +15,10 @@ return new class extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->string('fullcontent',500);
-            $table->string('answerA',200);
-            $table->string('answerB',200);
-            $table->string('answerC',200);
-            $table->string('answerD',200);
-            $table->integer('answer');
-            $table->integer('fieldquestions_id');
+            $table->string('category',200);
+            $table->string('question',200);
+            $table->string('correct_answer',200);
+            $table->string('incorrect_answer',200);
             $table->integer('status');
             $table->timestamps();
          });
