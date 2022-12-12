@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Card;
-use App\Http\Requests\StoreCardRequest;
-use App\Http\Requests\UpdateCardRequest;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreAccountRequest;
+use App\Http\Requests\UpdateAccountRequest;
 
-class CardController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class CardController extends Controller
      */
     public function index()
     {
-        $card = Card::all();
-        return view('pages.cards.index',['card'=>$card]);
+        $users = User::all();
+        return view('pages.users.index',['users'=>$users]);
     }
 
     /**
@@ -27,69 +27,67 @@ class CardController extends Controller
      */
     public function create()
     {
-        return view('pages.cards.create');
+        return view('pages.users.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCardRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $input = $request->all();
-        Card::create($input);
-        return redirect('cards')->with('thongbao', 'Thêm thẻ nạp thành công');  
+        $requestData = $request->all();
+        // $fileName = time().$request->file('images')->getClientOriginalName();
+        // $path = $request->file('image')->storeAs('images', $fileName, 'public');
+        // $requestData["photo"] = '/img/'.$path;
+        User::create($requestData);
+        return redirect('users')->with('thongbao', 'Thêm tài khoản thành công');  
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Card  $card
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $card = Card::find($id);
-        return view('pages.cards.show')->with('card', $card);
+        $users = User::find($id);
+        return view('pages.users.show')->with('users', $users);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Card  $card
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $card = Card::find($id);
-        return view('pages.cards.edit')->with('card', $card);
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCardRequest  $request
-     * @param  \App\Models\Card  $card
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $card = Card::find($id);
-        $input = $request->all();
-        $card->update($input);
-        return redirect('cards')->with('thongbao', 'Cập nhật thẻ nạp thành công');  
+        //
     }
-
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Card  $card
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Card $card)
+    public function destroy($id)
     {
         //
     }

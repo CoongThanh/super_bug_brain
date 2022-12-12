@@ -39,9 +39,6 @@ class FieldQuestionController extends Controller
      */
     public function store(Request $request)
     {
-        // $fieldquestion::create($request->all());
-        // return redirect()->route('pages.fieldquestion.index')->with('thongbao','Thêm lĩnh vực thành công!');
-
         $input = $request->all();
         FieldQuestion::create($input);
         return redirect('fieldquestions')->with('thongbao', 'Thêm lĩnh vực thành công');  
@@ -53,9 +50,10 @@ class FieldQuestionController extends Controller
      * @param  \App\Models\FieldQuestion  $fieldQuestion
      * @return \Illuminate\Http\Response
      */
-    public function show(FieldQuestion $fieldQuestion)
+    public function show($id)
     {
-        //
+        $fieldquestion = FieldQuestion::find($id);
+        return view('pages.fieldquestion.show')->with('fieldquestion', $fieldquestion);
     }
 
     /**
@@ -77,9 +75,12 @@ class FieldQuestionController extends Controller
      * @param  \App\Models\FieldQuestion  $fieldQuestion
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateFieldQuestionRequest $request, FieldQuestion $fieldQuestion)
+    public function update(Request $request, $id)
     {
-        //
+        $fieldquestion = FieldQuestion::find($id);
+        $input = $request->all();
+        $fieldquestion->update($input);
+        return redirect('fieldquestions')->with('thongbao', 'Cập nhật lĩnh vực thành công');  
     }
 
     /**
@@ -88,8 +89,9 @@ class FieldQuestionController extends Controller
      * @param  \App\Models\FieldQuestion  $fieldQuestion
      * @return \Illuminate\Http\Response
      */
-    public function destroy(FieldQuestion $fieldQuestion)
+    public function destroy($id)
     {
-        //
+        FieldQuestion::destroy($id);
+        return redirect('fieldquestions')->with('fieldquestion', 'Xóa lĩnh vực thành công');  
     }
 }

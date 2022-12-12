@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('cards', function (Blueprint $table) {
             $table->id();
-            $table->integer('denominations_id');
-            $table->integer('cardtype_id');
+            $table->string('namecard',200);
+            $table->integer('denominations');
+            $table->char('cardtype');
             $table->char('cardnumber');
             $table->integer('status');
             $table->timestamps();

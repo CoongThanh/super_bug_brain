@@ -7,6 +7,9 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\FieldQuestionController;
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\CardController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Request;
 
 /*
@@ -36,6 +39,10 @@ Route::post('reset-password', [SessionsController::class, 'update'])->middleware
 
 Route::resource("/questions", QuestionController::class);
 Route::resource('/fieldquestions', FieldQuestionController::class);
+Route::resource('/account', AccountController::class);
+Route::resource('/cards', CardController::class);
+Route::resource('/users', UserController::class);
+
 
 
 Route::get('verify', function () {
@@ -47,7 +54,7 @@ Route::get('/reset-password/{token}', function ($token) {
 
 Route::post('sign-out', [SessionsController::class, 'destroy'])->middleware('auth')->name('logout');
 Route::get('profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
-Route::post('user-profile', [ProfileController::class, 'update'])->middleware('auth');
+Route::post('user-profile', [ProfileController::class, 'update']); //->middleware('auth')
 Route::group(['middleware' => 'auth'], function () {
 	
 	Route::get('billing', function () {
@@ -78,3 +85,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('pages.laravel-examples.user-profile');
 	})->name('user-profile');
 });
+
+// Route::get('sign-in', function () {
+// 	return view('sessions.create');
+// })->name('sign-in');
+// Route::get('sign-up', function () {
+// 	return view('register.create');
+// })->name('sign-up');
