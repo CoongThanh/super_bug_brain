@@ -63,4 +63,6 @@ class AuthController extends Controller
         $response = ['message' => 'Incorrect email or password'];
         return response()->json($response, 400);
     }
+
+    
 }

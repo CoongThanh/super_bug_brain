@@ -12,7 +12,9 @@
                 <p class="card-text">Lĩnh vực: {{ $question->category }}</p>
                 <p class="card-text">Nội dung câu hỏi: {{ $question->question }}</p>
                 <p class="card-text">Đáp án đúng: {{ $question->correct_answer }}</p>
-                <p class="card-text">Đáp án sai: {{ $question->incorrect_answer }}</p>
+                <p class="card-text">Đáp án sai: {{ $question->incorrect1 }}</p>
+                <p class="card-text">Đáp án sai: {{ $question->incorrect2 }}</p>
+                <p class="card-text">Đáp án sai: {{ $question->incorrect3 }}</p>
               
                 @if ($question->status == 1)
                   <p class="card-text">Trạng thái: Hoạt động</p>

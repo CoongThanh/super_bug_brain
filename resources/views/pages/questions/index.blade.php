@@ -29,7 +29,9 @@
                                         <th>Lĩnh vực</th>
                                         <th>Nội dung câu hỏi</th>
                                        <th>Đáo án đúng</th>
-                                         {{-- <th>Đáp án sai</th> --}}
+                                        <th>Đáp án sai 1</th> 
+                                        <th>Đáp án sai 2</th>
+                                        <th>Đáp án sai 3</th>
                                         <th>Trạng thái </th>
                                         <th>Chức năng </th>
                                     </tr>
@@ -42,7 +44,9 @@
                                         <td class="px-4">{{ $item->category }}</td>
                                         <td class="px-4">{{ $item->question }}</td>
                                         <td class="px-4">{{ $item->correct_answer }}</td>
-                                        {{-- <td class="px-4">{{ $item->incorrect_answer }}</td> --}}
+                                        <td class="px-4">{{ $item->incorrect1 }}</td>
+                                        <td class="px-4">{{ $item->incorrect2 }}</td> 
+                                        <td class="px-4">{{ $item->incorrect3 }}</td>  
                                         @if ($item->status == 1)
                                             <td class="px-4">
                                                 <span class="badge badge-sm bg-gradient-success">Hoạt động</span>

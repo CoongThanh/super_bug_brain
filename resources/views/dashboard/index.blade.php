@@ -20,8 +20,8 @@
                         </div>
                         <hr class="dark horizontal my-0">
                         <div class="card-footer p-3">
-                            <p class="mb-0"><span class="text-success text-sm font-weight-bolder">10 </span>than
-                                lask week</p>
+                            <!-- <p class="mb-0"><span class="text-success text-sm font-weight-bolder">10 </span>than
+                                lask week</p> -->
                         </div>
                     </div>
                 </div>
@@ -39,8 +39,8 @@
                         </div>
                         <hr class="dark horizontal my-0">
                         <div class="card-footer p-3">
-                            <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+3% </span>than
-                                lask month</p>
+                            <!-- <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+3% </span>than
+                                lask month</p> -->
                         </div>
                     </div>
                 </div>
@@ -58,8 +58,8 @@
                         </div>
                         <hr class="dark horizontal my-0">
                         <div class="card-footer p-3">
-                            <p class="mb-0"><span class="text-danger text-sm font-weight-bolder">-2%</span> than
-                                yesterday</p>
+                            <!-- <p class="mb-0"><span class="text-danger text-sm font-weight-bolder">-2%</span> than
+                                yesterday</p> -->
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@
                         </div>
                         <hr class="dark horizontal my-0">
                         <div class="card-footer p-3">
-                            <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+5% </span>than
-                                yesterday</p>
+                            <!-- <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+5% </span>than
+                                yesterday</p> -->
                         </div>
                     </div>
                 </div>
@@ -88,18 +88,24 @@
                     <div class="card z-index-2 ">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                             <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                                <div class="chart">
-                                    <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
+                                <div class="logo"  >
+                                    <a href=""><img src="assets/img/businessman.png" style="
+                                        width: 150px;
+                                        height:150px;
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        textalign: center;"/></a>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="mb-0 ">Website Views</h6>
-                            <p class="text-sm ">Last Campaign Performance</p>
+                            <h6 class="mb-0 ">Công Thành</h6>
+                            <p class="text-sm ">CD TH 20PMB</p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
                                 <i class="material-icons text-sm my-auto me-1">schedule</i>
-                                <p class="mb-0 text-sm"> campaign sent 2 days ago </p>
+                                <p class="mb-0 text-sm"> Member </p>
                             </div>
                         </div>
                     </div>
@@ -108,19 +114,24 @@
                     <div class="card z-index-2  ">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                             <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
-                                <div class="chart">
-                                    <canvas id="chart-line" class="chart-canvas" height="170"></canvas>
+                            <div class="logo"  >
+                                    <a href=""><img src="assets/img/businessman.png" style="
+                                        width: 150px;
+                                        height:150px;
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        textalign: center;"/></a>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="mb-0 "> Daily Sales </h6>
-                            <p class="text-sm "> (<span class="font-weight-bolder">+15%</span>) increase in today
-                                sales. </p>
+                            <h6 class="mb-0 ">Quang Qui</h6>
+                            <p class="text-sm ">CD TH 20PMB</p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
                                 <i class="material-icons text-sm my-auto me-1">schedule</i>
-                                <p class="mb-0 text-sm"> updated 4 min ago </p>
+                                <p class="mb-0 text-sm"> Leader </p>
                             </div>
                         </div>
                     </div>
@@ -129,24 +140,30 @@
                     <div class="card z-index-2 ">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                             <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                                <div class="chart">
-                                    <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
+                                <div class="logo"  >
+                                        <a href=""><img src="assets/img/businessman.png" style="
+                                            width: 150px;
+                                            height:150px;
+                                            display: block;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            textalign: center;"/></a>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="mb-0 ">Completed Tasks</h6>
-                            <p class="text-sm ">Last Campaign Performance</p>
+                            <h6 class="mb-0 ">Đức Trọng</h6>
+                            <p class="text-sm ">CD TH 20PMB</p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
                                 <i class="material-icons text-sm my-auto me-1">schedule</i>
-                                <p class="mb-0 text-sm">just updated</p>
+                                <p class="mb-0 text-sm" > Member </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mb-4">
+            <!-- <div class="row mb-4">
                 <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
                     <div class="card">
                         <div class="card-header pb-0">
@@ -560,7 +577,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <x-footers.auth></x-footers.auth>
         </div>
     </main>

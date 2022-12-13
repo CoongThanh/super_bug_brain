@@ -10,6 +10,6 @@ class Question extends Model
     use HasFactory;
     protected $table = 'questions';
     protected $primaryKey = 'id';
-    protected $fillable = ['category', 'question', 'correct_answer','incorrect_answer','status'];
+    protected $fillable = ['category', 'question', 'correct_answer','incorrect1','incorrect2','incorrect3','status'];
 
 }

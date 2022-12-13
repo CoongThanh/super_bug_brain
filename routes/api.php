@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Api\QuestionController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +16,7 @@ use App\Http\Controllers\AuthController;
 |
 */
 
+Route::post('/questions', [QuestionController::class,'index']);
 Route::post('/auth/register', [AuthController::class, 'register']);
 Route::post('/auth/login', [AuthController::class, 'login']);
 

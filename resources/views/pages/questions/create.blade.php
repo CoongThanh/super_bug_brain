@@ -15,14 +15,25 @@
               <label>Đáp án đúng </label> 
               <input type="text" name="correct_answer" id="correct_answer" class="form-control px-1" placeholder="Nhập đáp án A"> 
           </div>
-          
-          <div class="row form-group">
+          <div class="form-group">
+              <label>Đáp án sai 1 </label> 
+              <input type="text" name="incorrect1" id="incorrect1" class="form-control px-1" placeholder="Nhập đáp án A"> 
+          </div> 
+          <div class="form-group">
+              <label>Đáp án sai 2 </label> 
+              <input type="text" name="incorrect2" id="incorrect2" class="form-control px-1" placeholder="Nhập đáp án B"> 
+          </div> 
+          <div class="form-group">
+              <label>Đáp án sai 3 </label> 
+              <input type="text" name="incorrect3" id="incorrect3" class="form-control px-1" placeholder="Nhập đáp án C"> 
+          </div>
+          <!-- <div class="row form-group">
               <label>Đáp án sai </label> 
               <input type="text" name="incorrect_answer" id="incorrect_answer" class="col-md-4 form-control px-3" placeholder="Nhập đáp án sai"> 
               {{-- <input name="incorrect_answer[info][][city]" type="text" placeholder="Nhập đáp án 1">
               <input name="incorrect_answer[info][][address]" type="text" placeholder="Nhập đáp án 2">
               <input name="incorrect_answer[info][][city]" type="text" placeholder="Nhập đáp án 3"> --}}
-            </div>        
+            </div>         -->
           <div class="row">  
             <div class="mb-3 col-md-6 form-group">
               <label>Lĩnh vực</label> 

@@ -7,6 +7,7 @@ use App\Http\Requests\StoreQuestionRequest;
 use App\Http\Requests\UpdateQuestionRequest;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Arr;
 class QuestionController extends Controller
 {
     /**
@@ -18,6 +19,7 @@ class QuestionController extends Controller
     {
         $questions = Question::all();
         return view('pages.questions.index')->with('questions', $questions);
+       
     }
 
     /**
