@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body"style="text-align: center;">
                             <h6 class="mb-0 ">Công Thành</h6>
                             <p class="text-sm ">CD TH 20PMB</p>
                             <hr class="dark horizontal">
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body"style="text-align: center;">
                             <h6 class="mb-0 ">Quang Qui</h6>
                             <p class="text-sm ">CD TH 20PMB</p>
                             <hr class="dark horizontal">
@@ -151,13 +151,13 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center;">
                             <h6 class="mb-0 ">Đức Trọng</h6>
                             <p class="text-sm ">CD TH 20PMB</p>
                             <hr class="dark horizontal">
-                            <div class="d-flex ">
+                            <div class="d-flex " style="text-align: center;">
                                 <i class="material-icons text-sm my-auto me-1">schedule</i>
-                                <p class="mb-0 text-sm" > Member </p>
+                                <p class="mb-0 text-sm " > Member </p>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Ảnh đại diện</th>
+                                        <!-- <th>Ảnh đại diện</th> -->
                                         <th>Tên tài khoản</th>
                                         {{-- <th>Email</th>
                                         <th>Mật khẩu</th>
@@ -41,14 +41,14 @@
                                     <tr>
                                         <td class="px-4">{{ $loop->iteration }}</td>
                                         {{-- <td class="px-4">{{ $item->id }}</td> --}}
-                                        {{-- <td class="px-5">
+                                        <!-- {{-- <td class="px-5">
                                             <img src="{{ asset('assets') }}/img/team-4.jpg"
                                             class="avatar avatar-sm me-3 border-radius-lg" alt="user3">
                                         </td> --}}
                                         <td>
                                             <img class="px-4" src="{{ asset($item->image) }}" width= '40' height='40' class="img img-responsive" />
                                         </td>
-                                        {{-- <td class="px-4">{{ $item->image }}</td> --}}
+                                        {{-- <td class="px-4">{{ $item->image }}</td> --}} -->
                                         <td class="px-4">{{ $item->name }}</td>
                                         {{-- <td class="px-4">{{ $item->email }}</td>
                                         <td class="px-4">{{ $item->password }}</td>

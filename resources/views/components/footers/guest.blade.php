@@ -7,7 +7,7 @@
                         document.write(new Date().getFullYear())
 
                     </script>,
-                    made with <i class="fa fa-heart" aria-hidden="true"></i> by
+                   made from <i class="fa fa-heart" aria-hidden="true"></i> by
                     <a href="" class="font-weight-bold text-white" target="_blank">Quang Qui
                         </a> & <a href="" class="font-weight-bold text-white" target="_blank">Công Thành</a>
                         </a> & <a href="" class="font-weight-bold text-white" target="_blank">Đức Trọng</a>

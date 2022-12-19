@@ -33,6 +33,8 @@ class AuthController extends Controller
             'name' => $req->name,
             'email' => $req->email,
             'password' => Hash::make($req->password),
+            'point'=> 200,
+            'ranker' => '0',
             'role'=> 0,
             'status'=> 1
         ]);
@@ -60,9 +62,11 @@ class AuthController extends Controller
             $response = ['users' => $user, 'token' => $token];
             return response()->json($response, 200);
         }
-        $response = ['message' => 'Incorrect email or password'];
+        $response = ['message' => 'Sai email hoặc mật khẩu'];
         return response()->json($response, 400);
     }
+
+   
 
     
 }

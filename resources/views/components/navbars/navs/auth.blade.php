@@ -28,7 +28,7 @@
                             onclick="event.preventDefault();document.getElementById('logout-form').submit();">Đăng xuất</span>
                     </a>
                 </li>
-                <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                 <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                     <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
                         <div class="sidenav-toggler-inner">
                             <i class="sidenav-toggler-line"></i>
@@ -42,7 +42,7 @@
                         <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
                     </a>
                 </li>
-                <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                <!-- <li class="nav-item dropdown pe-2 d-flex align-items-center">
                     <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa fa-bell cursor-pointer"></i>
@@ -123,8 +123,8 @@
                                 </div>
                             </a>
                         </li>
-                    </ul>
-                </li>
+                    </ul> 
+                </li>  -->
             </ul>
         </div>
     </div>

@@ -4,10 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Question;
+use App\Models\User;
 use Illuminate\Support\Arr;
-
-class QuestionController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,29 +15,11 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        $data = Question::all();
-        $data->toArray();
-       
-        
-        $array=[];
-       
-        for ($i = 0; $i < $data->count(); $i++) {
-        $arr = [
-            "category" => $data[$i]->category,
-            
-            "question" => $data[$i]->question,
-            "correct_answer" => $data[$i]->correct_answer,
-            "incorrect_answers" => [
-                $data[$i]->incorrect1,  $data[$i]->incorrect2,  $data[$i]->incorrect3
-            ]
-        ];
-        array_push($array, $arr);
-        
-    }
-          return response()->json([
-          "response_code" => 0,
-            "results"=>$array,
-        ]);
+        $data = User::all();
+        dd($data);
+        return response()->json(
+          $data
+        );
     }
 
     /**
