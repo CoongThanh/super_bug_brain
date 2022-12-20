@@ -65,7 +65,28 @@ class AuthController extends Controller
         $response = ['message' => 'Sai email hoặc mật khẩu'];
         return response()->json($response, 400);
     }
+    public function updateuser(Request $request)
+    {
+        try {
+            $user = new User();
+            $id = $request->get('id');
+            $data = $user->getById($id)[0];
+            $data->point = $request->get('point');
+            $user->updateUserName($data);
+            
 
+            return response()->json([
+                'status' => 200,
+                'data' => $data,
+                
+            ], 200);
+        } catch (\Throwable $th) {
+            return response()->json([
+                "status" => 500,
+                "message" => "update failed!"
+            ], 500);
+        }
+    }
    
 
     

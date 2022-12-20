@@ -16,11 +16,14 @@ use App\Http\Controllers\Api\UserController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('/users', [UserController::class,'index']);
-Route::post('/questions', [QuestionController::class,'index']);
-Route::post('/auth/register', [AuthController::class, 'register']);
-Route::post('/auth/login', [AuthController::class, 'login']);
 
+Route::get('/questions/{id}',[QuestionController::class,'index']);
+Route::post('/users', [UserController::class,'index']);
+// Route::post('/questions', [QuestionController::class,'index']);
+Route::post('/auth/register', [AuthController::class, 'register']);
+Route::post('/auth/updateuser', [AuthController::class, 'updateuser']);
+Route::post('/auth/login', [AuthController::class, 'login']);
+Route::get('/linhvuc',[QuestionController::class,'linhvuc']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

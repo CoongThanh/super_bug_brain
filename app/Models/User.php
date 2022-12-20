@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-
+use Illuminate\Support\Facades\DB;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -50,4 +50,12 @@ class User extends Authenticatable
     // {
     //     $this->attributes['password'] = bcrypt($password);
     // }
+    public function getByID($id)
+    {
+        return DB::select('select * from users where id = ?', [$id]);
+    }
+    public function updateUserName($data)
+    {
+        return DB::update('update users set point = ? where id = ?', [ $data->point,$data->id]);
+    }
 }

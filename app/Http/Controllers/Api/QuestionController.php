@@ -6,7 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Question;
 use Illuminate\Support\Arr;
-
+use Illuminate\Support\Facades\DB;
+use App\Models\FieldQuestion;
 class QuestionController extends Controller
 {
     /**
@@ -14,15 +15,21 @@ class QuestionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function linhvuc(Request $linhvuc)
     {
-        $data = Question::all();
-        $data->toArray();
-       
+        $linhvuc = FieldQuestion::all();
+        return response()->json([
+            'field_questions'=>$linhvuc
+        ], 200,);
+
+    }
+    public function index(Request $req,$id)
+    {
+        $data = DB::table('questions')->where('category','=',$id)->get()->toArray();
+        // $data->toArray();
         
         $array=[];
-       
-        for ($i = 0; $i < $data->count(); $i++) {
+        for ($i = 0; $i < count($data); $i++) {
         $arr = [
             "category" => $data[$i]->category,
             
@@ -35,8 +42,8 @@ class QuestionController extends Controller
         array_push($array, $arr);
         
     }
-          return response()->json([
-          "response_code" => 0,
+        return response()->json([
+        "response_code" => 0,
             "results"=>$array,
         ]);
     }
