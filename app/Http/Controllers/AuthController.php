@@ -13,7 +13,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Contracts\Auth\CanResetPassword;
-
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Query\Builder;
 class AuthController extends Controller
 {
     public function register(Request $req)
@@ -73,8 +74,6 @@ class AuthController extends Controller
             $data = $user->getById($id)[0];
             $data->point = $request->get('point');
             $user->updateUserName($data);
-            
-
             return response()->json([
                 'status' => 200,
                 'data' => $data,
@@ -86,6 +85,37 @@ class AuthController extends Controller
                 "message" => "update failed!"
             ], 500);
         }
+    }
+
+    public function ranker(Request $req)
+    {
+        // $user = new User();
+        // $req = $user->getRanker();
+        // $req =DB::table('users')->where('point','0')->all();
+
+        $query = "SELECT id,name , point
+        FROM users
+        where role=0
+        order by point desc
+        limit 10;";
+        $req= DB::select($query);
+        return response()->json(
+            $req
+        , 200,);
+    }
+    public function friends(Request $req)
+    {
+        // $user = new User();
+        // $req = $user->getRanker();
+        // $req =DB::table('users')->where('point','0')->all();
+
+        $query = "SELECT id,name , point
+        FROM users
+        where role=0";
+        $req= DB::select($query);
+        return response()->json(
+            $req
+        , 200,);
     }
    
 

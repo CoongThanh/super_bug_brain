@@ -22,6 +22,8 @@ Route::post('/users', [UserController::class,'index']);
 // Route::post('/questions', [QuestionController::class,'index']);
 Route::post('/auth/register', [AuthController::class, 'register']);
 Route::post('/auth/updateuser', [AuthController::class, 'updateuser']);
+Route::get('/auth/ranker', [AuthController::class, 'ranker']);
+Route::get('/auth/friends', [AuthController::class, 'friends']);
 Route::post('/auth/login', [AuthController::class, 'login']);
 Route::get('/linhvuc',[QuestionController::class,'linhvuc']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

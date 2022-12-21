@@ -58,4 +58,8 @@ class User extends Authenticatable
     {
         return DB::update('update users set point = ? where id = ?', [ $data->point,$data->id]);
     }
+    public function getRanker()
+    {
+        return DB::select('select * from users where role = 0');
+    }
 }
