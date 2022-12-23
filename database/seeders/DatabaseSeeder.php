@@ -4,7 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
-
+use App\Models\Question;
+use App\Models\FieldQuestion;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,9 +23,10 @@ class DatabaseSeeder extends Seeder
 
         // Lưu ý thứ tự khi có khóa ngoại
         $this-> call([
-            Question::class,
-            FieldQuestion::class
+            QuestionSeeder::class,
+            FieldQuestionSeeder::class,
+            UserSeeder::class
         ]);
-         
+        
     }
 }
