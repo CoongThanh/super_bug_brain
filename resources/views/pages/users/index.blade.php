@@ -30,8 +30,8 @@
                                         {{-- <th>Email</th>
                                         <th>Mật khẩu</th>
                                         <th>Điểm</th>
-                                        <th>Xếp hạng</th>--}}
-                                        <th>Role</th> 
+                                        <th>Xếp hạng</th>
+                                        <th>Role</th> --}}
                                         <th>Trạng thái</th>
                                         <th>Chức năng</th>
                                     </tr>
@@ -69,7 +69,7 @@
                                         @endif--}}
 
                                         {{-- <td class="px-4">{{ $item->role }}</td>  --}}
-                                        @if ($item->role == 0)
+                                        <!-- @if ($item->role == 0)
                                         <td class="px-4">
                                             <span class="">Admin</span>
                                         </td>
@@ -77,7 +77,7 @@
                                         <td class="px-4">
                                             <span class="">Editor</span>
                                         </td>
-                                        @endif
+                                        @endif -->
 
                                         @if ($item->status == 1)
                                             <td class="px-4">

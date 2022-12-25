@@ -39,9 +39,6 @@ class AccountController extends Controller
     public function store(Request $request)
     {
         $requestData = $request->all();
-        // $fileName = time().$request->file('images')->getClientOriginalName();
-        // $path = $request->file('image')->storeAs('images', $fileName, 'public');
-        // $requestData["photo"] = '/img/'.$path;
         Account::create($input);
         return redirect('account')->with('thongbao', 'Thêm tài khoản thành công');  
     }

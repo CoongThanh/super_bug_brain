@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();  
             $table->string('password');
-            $table->string('image',200);
             $table->integer('role')->nullable();
             $table->integer('status')->nullable();
             $table->rememberToken();

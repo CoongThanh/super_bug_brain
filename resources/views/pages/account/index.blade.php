@@ -25,12 +25,12 @@
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <!-- <th>Ảnh đại diện</th> -->
+                                        
                                         <th>Tên tài khoản</th>
-                                        {{-- <th>Email</th>
+                                        <!-- <th>Email</th>
                                         <th>Mật khẩu</th>
-                                        <th>Điểm</th>
-                                        <th>Xếp hạng</th>--}}
+                                        <th>Xếp hạng</th>
+                                        <th>Điểm</th> -->
                                         <th>Role</th> 
                                         <th>Trạng thái</th>
                                         <th>Chức năng</th>
@@ -69,7 +69,7 @@
                                         @endif
 
                                         <td class="px-4">{{ $item->role }}</td> --}}
-                                        @if ($item->role == 0)
+                                        @if ($item->role == 1)
                                         <td class="px-4">
                                             <span class="">Admin</span>
                                         </td>
