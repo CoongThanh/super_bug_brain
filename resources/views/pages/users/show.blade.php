@@ -34,7 +34,7 @@
                          @if ($users->role == 1)
                          <p class="card-text">Tài khoản Admin</p>
                         @else
-                        <p class="card-text">Tài khoản Editor</p>
+                        <p class="card-text">Tài khoản Người Chơi</p>
                         @endif 
 
                         @if ($users->status == 1)

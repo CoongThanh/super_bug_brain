@@ -38,10 +38,10 @@
             <div class="mb-3 col-md-6 form-group">
               <label>Lĩnh vực</label> 
               <select name="category" id="category" class="form-select px-1">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="1">Tiếng Anh</option>
+                <option value="2">Bóng Đá</option>
+                <option value="3">Hóa Học</option>
+                <option value="4">IT</option>
               </select>
             </div>  
             <div class="mb-3 col-md-6 form-group">

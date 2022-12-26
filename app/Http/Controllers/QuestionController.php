@@ -6,7 +6,7 @@ use App\Models\Question;
 use App\Http\Requests\StoreQuestionRequest;
 use App\Http\Requests\UpdateQuestionRequest;
 use Illuminate\Http\Request;
-
+use Toastr;
 use Illuminate\Support\Arr;
 class QuestionController extends Controller
 {
@@ -95,4 +95,16 @@ class QuestionController extends Controller
         Question::destroy($id);
         return redirect('questions')->with('question', 'Xóa câu hỏi thành công');  
     }
+
+    // public function changeStatus($id){
+    //     $getStatus = Question::select('status')->where('id',$id)->first();
+    //     if($getStatus->status==1){
+    //         $status = 0;
+    //     }else{
+    //         $status = 1;
+    //     }
+    //     Question::where('id',$id)->update(['status'=>$status]);
+    //     Toastr::success('Status Successfully Changed', 'Success', ["positionClass" => "toast-top-right","closeButton"=> "true","progressBar"=> "true"]);
+    //     return redirect()->back();
+    // }
 }

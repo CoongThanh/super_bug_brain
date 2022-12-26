@@ -38,12 +38,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $requestData = $request->all();
-        // $fileName = time().$request->file('images')->getClientOriginalName();
-        // $path = $request->file('image')->storeAs('images', $fileName, 'public');
-        // $requestData["photo"] = '/img/'.$path;
-        User::create($requestData);
-        return redirect('users')->with('thongbao', 'Thêm tài khoản thành công');  
+        // $requestData = $request->all();
+        // User::create($requestData);
+        // return redirect('users')->with('thongbao', 'Thêm tài khoản thành công');  
     }
 
     /**
@@ -78,7 +75,10 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $users = User::find($id);
+        $input = $request->all();
+        $users->update($input);
+        return redirect('users')->with('thongbao', 'Cập nhật người chơi thành công');
     }
 
     /**

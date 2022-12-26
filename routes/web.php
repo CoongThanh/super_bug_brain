@@ -42,7 +42,7 @@ Route::resource('/fieldquestions', FieldQuestionController::class);
 Route::resource('/account', AccountController::class);
 Route::resource('/cards', CardController::class);
 Route::resource('/users', UserController::class);
-
+// Route::get('/change-status/{id}',[QuestionController::class,'changeStatus']);
 
 
 Route::get('verify', function () {

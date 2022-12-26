@@ -50,13 +50,16 @@
                                         <td class="px-4">
                                             <a href="{{ url('/fieldquestions/' . $item->id) }}" title="View"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Xem</button></a>
                                             <a href="{{ url('/fieldquestions/' . $item->id . '/edit') }}" title="Edit"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sửa</button></a>
-                                            @if ($item->status == 1)
-                                            <form method="POST" action="{{ url('/fieldquestions' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
-                                                {{ method_field('DELETE') }}
+                                            <form action="{{ url('/fieldquestions' . '/' . $item->id) }}" method="post" accept-charset="UTF-8" style="display:inline">
+                                                {{ method_field('PATCH') }}
                                                 {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</button>
+                                                @if ($item->status== 1)
+                                                <input type="hidden" name="status" id="status" value="0">
+                                                @else
+                                                <input type="hidden" name="status" id="status" value="1">
+                                                @endif
+                                                <button type="submit" onclick="return confirm('Are you sure to Close/Open it?')" class="btn btn-danger btn-sm"> Đóng/Mở</button>
                                             </form>
-                                            @endif
                                         </td>
                                     </tr>
                                 @endforeach
