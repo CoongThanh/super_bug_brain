@@ -57,7 +57,7 @@ Route::get('user-profile', function () {
 
 Route::post('sign-out', [SessionsController::class, 'destroy'])->middleware('auth')->name('logout');
 Route::get('profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
-Route::post('user-profile', [ProfileController::class, 'update']); //->middleware('auth')
+Route::post('user-profile', [ProfileController::class, 'update']);
 Route::group(['middleware' => 'auth'], function () {
 	
 	Route::get('billing', function () {

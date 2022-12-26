@@ -33,7 +33,7 @@ class RegisterController extends Controller
             'name' => $req->name,
             'email' => $req->email,
             'password' => Hash::make($req->password),
-            'role'=> 1,
+            'role'=> 0,
             'status'=> 1
         ]);
         $user->save();

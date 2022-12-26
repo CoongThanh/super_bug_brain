@@ -30,8 +30,8 @@
                                         {{-- <th>Email</th>
                                         <th>Mật khẩu</th>--}}
                                         <th>Điểm</th>
+                                        <!-- <th>Role</th>  -->
                                         {{-- <th>Xếp hạng</th> --}}
-                                        <th>Role</th> 
                                         <th>Trạng thái</th>
                                         <th>Chức năng</th>
                                     </tr>
@@ -69,7 +69,7 @@
                                         @endif --}}
 
                                          {{-- <td class="px-4">{{ $item->role }}</td>  --}}
-                                         @if ($item->role == 1)
+                                         <!-- @if ($item->role == 1)
                                         <td class="px-4">
                                             <span class="">Admin</span>
                                         </td>
@@ -77,7 +77,7 @@
                                         <td class="px-4">
                                             <span class="">Editor</span>
                                         </td>
-                                        @endif 
+                                        @endif  -->
 
                                         @if ($item->status == 1)
                                             <td class="px-4">
@@ -98,7 +98,6 @@
                                                     {{ csrf_field() }}
                                                     <button type="submit" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</button>
                                                 </form>
-                                            
                                             @endif
                                            
                                         </td>
