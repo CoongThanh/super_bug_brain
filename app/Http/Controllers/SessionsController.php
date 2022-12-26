@@ -26,11 +26,11 @@ class SessionsController extends Controller
         $user = Account::where('email', $req->email)->first();
         if ($user && Hash::check($req->password, $user->password)) {
             $token = $user->createToken('Personal Access Token')->plainTextToken;
-            if($user->role==1){
+            if($user->role==0){
             return redirect('/dashboard');
-            }else{
+            }else
                 return ['message' => 'Bạn không có quyền truy cập'];
-            }
+            
         }
         return redirect('/sign-in');
     }
