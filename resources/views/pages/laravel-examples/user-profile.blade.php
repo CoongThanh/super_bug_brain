@@ -7,7 +7,7 @@
         <!-- End Navbar -->
         <div class="container-fluid px-2 px-md-4">
             <div class="page-header min-height-300 border-radius-xl mt-4"
-                style="background-image: url('https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
+                style="background-image: url('https://images.unsplash.com/photo-1445855743215-296f71d4b49c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');">
                 <span class="mask  bg-gradient-primary  opacity-6"></span>
             </div>
             <div class="card card-body mx-3 mx-md-4 mt-n6">
@@ -89,7 +89,7 @@
                         @endif
                         <form method='POST' action='{{ route('user-profile') }}'>
                             @csrf
-                            <div class="row">
+                            {{-- <div class="row">
                                 
                                 <div class="mb-3 col-md-6">
                                     <label class="form-label">Email address</label>
@@ -132,7 +132,7 @@
                                         <p class='text-danger inputerror'>{{ $message }} </p>
                                         @enderror
                                 </div>
-                            </div>
+                            </div> --}}
                             <button type="submit" class="btn bg-gradient-dark">Submit</button>
                         </form>
 

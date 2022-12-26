@@ -9,10 +9,10 @@
                             <h6 class="text-white mx-3"><strong>QUẢN LÝ TÀI KHOẢN</strong></h6>
                         </div>
                     </div>
-                    <div class=" me-3 my-3 text-end">
+                    {{-- <div class=" me-3 my-3 text-end">
                         <a href="{{ url('/account/create') }}" class="btn bg-gradient-dark mb-0" href="javascript:;"><i
                                 class="material-icons text-sm">add</i>THÊM TÀI KHOẢN</a>
-                    </div>
+                    </div> --}}
                    
                     <div class="card-body">
                         @if (Session::has('thongbao'))
@@ -91,13 +91,15 @@
                                                                         
                                         <td class="px-4">
                                             <a href="{{ url('/account/' . $item->id) }}" title="View"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Xem</button></a>
-                                            <a href="{{ url('/account/' . $item->id . '/edit') }}" title="Edit"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sửa</button></a>
+                                            {{-- <a href="{{ url('/account/' . $item->id . '/edit') }}" title="Edit"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sửa</button></a> --}}
+                                            {{-- @if ($item->status == 1)
                                             <form method="POST" action="{{ url('/account' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Student" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</button>
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</button>
                                             </form>
-                                        </td>
+                                            @endif--}}
+                                        </td>  
                                     </tr>
                                 @endforeach
                                 </tbody>

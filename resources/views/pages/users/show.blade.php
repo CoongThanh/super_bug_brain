@@ -11,10 +11,10 @@
               </div>
               <div class="card-body">
                       <p class="card-text">Tên tài khoản: {{ $users->name }}</p>
-                      <p class="card-text">Ảnh đại diện: </p>
-                      <img src="{{ $users->image }}" alt="Loading..." style="width:150;height:150;">
+                      {{-- <p class="card-text">Ảnh đại diện: </p>
+                      <img src="{{ $users->image }}" alt="Loading..." style="width:150;height:150;"> --}}
                       <p class="card-text">Email: {{ $users->email }}</p>
-                      <p class="card-text">Mật khẩu: {{ $users->password }}</p>
+                      {{-- <p class="card-text">Mật khẩu: {{ $users->password }}</p> --}}
                       {{-- <p class="card-text">Điểm: {{ $users->point }}</p>
         
                         @if ($users->ranker==1)
@@ -31,10 +31,10 @@
                             <p class="card-text">Xếp hạng: Huyền Thoại</p>
                         @endif --}}
 
-                         @if ($users->role == 0)
-                         <p class="card-text">Admin</p>
+                         @if ($users->role == 1)
+                         <p class="card-text">Tài khoản Admin</p>
                         @else
-                        <p class="card-text">Editor</p>
+                        <p class="card-text">Tài khoản Editor</p>
                         @endif 
 
                         @if ($users->status == 1)

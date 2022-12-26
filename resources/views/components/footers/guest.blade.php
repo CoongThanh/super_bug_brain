@@ -7,14 +7,13 @@
                         document.write(new Date().getFullYear())
 
                     </script>,
-                   made from <i class="fa fa-heart" aria-hidden="true"></i> by
                     <a href="" class="font-weight-bold text-white" target="_blank">Quang Qui
                         </a> & <a href="" class="font-weight-bold text-white" target="_blank">Công Thành</a>
                         </a> & <a href="" class="font-weight-bold text-white" target="_blank">Đức Trọng</a>
-                    Thực Hiện
+                   thực hiện
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            {{-- <div class="col-12 col-md-6">
                 <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                     <li class="nav-item">
                         <a href="https://www.creative-tim.com" class="nav-link text-white" target="_blank">Creative
@@ -35,7 +34,7 @@
                             target="_blank">License</a>
                     </li>
                 </ul>
-            </div>
+            </div> --}}
         </div>
     </div>
 </footer>

@@ -100,8 +100,8 @@
                             </div>
                         </div>
                         <div class="card-body"style="text-align: center;">
-                            <h6 class="mb-0 ">Công Thành</h6>
-                            <p class="text-sm ">CD TH 20PMB</p>
+                            <h6 class="mb-0 ">Nguyễn Công Thành</h6>
+                            <p class="text-sm ">CĐ TH 20PMB</p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
                                 <i class="material-icons text-sm my-auto me-1">schedule</i>
@@ -126,8 +126,8 @@
                             </div>
                         </div>
                         <div class="card-body"style="text-align: center;">
-                            <h6 class="mb-0 ">Quang Qui</h6>
-                            <p class="text-sm ">CD TH 20PMB</p>
+                            <h6 class="mb-0 ">Đào Lâm Quang Qui</h6>
+                            <p class="text-sm ">CĐ TH 20PMB</p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
                                 <i class="material-icons text-sm my-auto me-1">schedule</i>
@@ -152,8 +152,8 @@
                                 </div>
                         </div>
                         <div class="card-body" style="text-align: center;">
-                            <h6 class="mb-0 ">Đức Trọng</h6>
-                            <p class="text-sm ">CD TH 20PMB</p>
+                            <h6 class="mb-0 ">Huỳnh Nguyễn Đức Trọng</h6>
+                            <p class="text-sm ">CĐ 20PMB</p>
                             <hr class="dark horizontal">
                             <div class="d-flex " style="text-align: center;">
                                 <i class="material-icons text-sm my-auto me-1">schedule</i>

@@ -1,11 +1,13 @@
 <?php
 
 namespace Database\Seeders;
+
 use App\Model\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+
 class UserSeeder extends Seeder
 {
     /**
@@ -32,7 +34,7 @@ class UserSeeder extends Seeder
                 'point' => '100',
                 'ranker' => '0',
                 'role' => '0',
-                'status' => '1',
+                'status' => '0',
             ],
             [
                 'name' => 'Duyển',
@@ -41,7 +43,7 @@ class UserSeeder extends Seeder
                 'point' => '150',
                 'ranker' => '0',
                 'role' => '0',
-                'status' => '1',
+                'status' => '0',
             ],
             [
                 'name' => 'Công Thành',
@@ -55,6 +57,16 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Anh Phi',
                 'email' => 'anhphi@gmail.com',
+                'password' => Hash::make('123456'),
+                'point' => '1000',
+                'ranker' => '0',
+                'role' => '0',
+                'status' => '1',
+                
+            ],    
+            [
+                'name' => 'Đức Trọng',
+                'email' => 'ductrong@gmail.com',
                 'password' => Hash::make('123456'),
                 'point' => '1000',
                 'ranker' => '0',

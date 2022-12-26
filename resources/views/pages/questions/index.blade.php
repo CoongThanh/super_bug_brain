@@ -28,10 +28,10 @@
                                         <th>Id</th>
                                         <th>Lĩnh vực</th>
                                         <th>Nội dung câu hỏi</th>
-                                       <th>Đáo án đúng</th>
+                                        {{-- <th>Đáo án đúng</th>
                                         <th>Đáp án sai 1</th> 
                                         <th>Đáp án sai 2</th>
-                                        <th>Đáp án sai 3</th>
+                                        <th>Đáp án sai 3</th> --}}
                                         <th>Trạng thái </th>
                                         <th>Chức năng </th>
                                     </tr>
@@ -43,10 +43,10 @@
                                         {{-- <td class="px-4">{{ $item->id }}</td> --}}
                                         <td class="px-4">{{ $item->category }}</td>
                                         <td class="px-4">{{ $item->question }}</td>
-                                        <td class="px-4">{{ $item->correct_answer }}</td>
+                                        {{-- <td class="px-4">{{ $item->correct_answer }}</td>
                                         <td class="px-4">{{ $item->incorrect1 }}</td>
                                         <td class="px-4">{{ $item->incorrect2 }}</td> 
-                                        <td class="px-4">{{ $item->incorrect3 }}</td>  
+                                        <td class="px-4">{{ $item->incorrect3 }}</td>   --}}
                                         @if ($item->status == 1)
                                             <td class="px-4">
                                                 <span class="badge badge-sm bg-gradient-success">Hoạt động</span>
@@ -59,11 +59,14 @@
                                         <td class="px-4">
                                             <a href="{{ url('/questions' . '/' . $item->id) }}" title="View"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Xem</button></a>
                                             <a href="{{ url('/questions' . '/' . $item->id . '/edit') }}" title="Edit"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sửa</button></a>
+                                            @if ($item->status == 1)
                                             <form method="POST" action="{{ url('/questions' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</button>
                                             </form>
+                                            @endif
+
                                         </td>
                                     </tr>
                                 @endforeach

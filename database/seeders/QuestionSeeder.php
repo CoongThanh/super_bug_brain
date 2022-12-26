@@ -6,6 +6,7 @@ use App\Model\Question;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+
 class QuestionSeeder extends Seeder
 {
     /**
@@ -23,7 +24,7 @@ class QuestionSeeder extends Seeder
                 'incorrect1' => 'this',
                 'incorrect2' => 'them',
                 'incorrect3' => 'that',
-                'status' => '1',
+                'status' => '0',
             ],
             [
                 'category' => '1',

@@ -51,6 +51,9 @@ Route::get('verify', function () {
 Route::get('/reset-password/{token}', function ($token) {
 	return view('sessions.password.reset', ['token' => $token]);
 })->middleware('guest')->name('password.reset');
+Route::get('user-profile', function () {
+	return view('pages.laravel-examples.user-profile');
+})->name('user-profile');
 
 Route::post('sign-out', [SessionsController::class, 'destroy'])->middleware('auth')->name('logout');
 Route::get('profile', [ProfileController::class, 'create'])->middleware('auth')->name('profile');
@@ -81,9 +84,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('user-management', function () {
 		return view('pages.laravel-examples.user-management');
 	})->name('user-management');
-	Route::get('user-profile', function () {
-		return view('pages.laravel-examples.user-profile');
-	})->name('user-profile');
+	
 });
 
 // Route::get('sign-in', function () {

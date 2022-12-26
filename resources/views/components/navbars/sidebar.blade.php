@@ -23,7 +23,7 @@
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i style="font-size: 1.2rem;" class="fas fa-user-circle ps-2 pe-2 text-center"></i>
                     </div>
-                    <span class="nav-link-text ms-1">User Profile</span>
+                    <span class="nav-link-text ms-1">Thông tin cá nhân</span>
                 </a>
             </li>
             {{-- <li class="nav-item">
@@ -36,10 +36,10 @@
                 </a>
             </li> --}}
             <li class="nav-item">
-                <a class="nav-link text-white {{ $activePage == 'accounts' ? 'active bg-gradient-primary' : '' }} "
-                    href="/users">
+                <a class="nav-link text-white {{ $activePage == 'account' ? 'active bg-gradient-primary' : '' }} "
+                    href="/account">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i style="font-size: 1.2rem;" class="fas fa-user-circle ps-2 pe-2 text-center"></i>
+                        <i style="font-size: 1.2rem; padding: 0px 7px;" class="material-icons opacity-10">receipt_long</i>
                     </div>
                     <span class="nav-link-text ms-1">Tài Khoản</span>
                 </a>
@@ -68,7 +68,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white {{ $activePage == 'users' ? ' active bg-gradient-primary' : '' }} "
-                    href="/account">
+                    href="/users">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
                     </div>
@@ -152,20 +152,21 @@
                     <span class="nav-link-text ms-1">Profile</span>
                 </a>
             </li> --}}
+         
+            <li class="nav-item">
+                <a class="nav-link text-white " href="/sign-up">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">assignment</i>
+                    </div>
+                    <span class="nav-link-text ms-1">Đăng Ký</span>
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link text-white " href="{{ route('static-sign-in') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">login</i>
                     </div>
                     <span class="nav-link-text ms-1">Đăng Xuất</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white " href="{{ route('static-sign-up') }}">
-                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">assignment</i>
-                    </div>
-                    <span class="nav-link-text ms-1">Đăng Ký</span>
                 </a>
             </li>
         </ul>

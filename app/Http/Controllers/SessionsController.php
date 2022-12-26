@@ -29,7 +29,7 @@ class SessionsController extends Controller
             if($user->role==1){
             return redirect('/dashboard');
             }else{
-                return ['message' => 'Ban Khong Co Quyen Truy Cap Trang Nay'];
+                return ['message' => 'Bạn không có quyền truy cập'];
             }
         }
         return redirect('/sign-in');
