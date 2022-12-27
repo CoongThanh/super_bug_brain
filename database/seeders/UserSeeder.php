@@ -37,13 +37,13 @@ class UserSeeder extends Seeder
                 'status' => '0',
             ],
             [
-                'name' => 'Duyển',
+                'name' => 'Quang Qui',
                 'email' => 'duyen@gmail.com',
                 'password' => Hash::make('123456'),
                 'point' => '150',
                 'ranker' => '0',
                 'role' => '0',
-                'status' => '0',
+                'status' => '1',
             ],
             [
                 'name' => 'Công Thành',

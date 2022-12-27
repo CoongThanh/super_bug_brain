@@ -7,7 +7,13 @@
           <div class="card">
               <div class="card-header">
                  
-                  <h3>Tài khoản {{ $users->id }} </h3>
+                  <h3>NGƯỜI DÙNG
+                    @if($users->id < 10)
+                        0{{ $users->id }}
+                    @else
+                        {{ $users->id }}
+                    @endif 
+                    </h3>
               </div>
               <div class="card-body">
                       <p class="card-text">Tên tài khoản: {{ $users->name }}</p>

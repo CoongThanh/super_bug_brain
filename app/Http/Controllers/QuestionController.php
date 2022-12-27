@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Question;
+use App\Models\FieldQuestion;
 use App\Http\Requests\StoreQuestionRequest;
 use App\Http\Requests\UpdateQuestionRequest;
 use Illuminate\Http\Request;
@@ -18,7 +19,7 @@ class QuestionController extends Controller
     public function index()
     {
         $questions = Question::all();
-        return view('pages.questions.index')->with('questions', $questions);
+        return view('pages.questions.index',['questions'=> $questions]);
        
     }
 
@@ -29,7 +30,8 @@ class QuestionController extends Controller
      */
     public function create()
     {
-        return view('pages.questions.create');
+        $questions=FieldQuestion::all();
+        return view('pages.questions.create',['questions'=>$questions]);
     }
 
     /**
@@ -54,7 +56,7 @@ class QuestionController extends Controller
     public function show($id)
     {
         $question = Question::find($id);
-        return view('pages.questions.show')->with('question', $question);
+        return view('pages.questions.show',['question'=>$question]);
     }
 
     /**
@@ -65,10 +67,9 @@ class QuestionController extends Controller
      */
     public function edit($id)
     {
-        $question = Question::find($id);
-        return view('pages.questions.edit')->with('question', $question);
+        $questions = Question::find($id);
+        return view('pages.questions.edit',['questions'=>$questions]);
     }
-
     /**
      * Update the specified resource in storage.
      *

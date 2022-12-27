@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Model\fieldQuestion;
+use App\Model\FieldQuestion;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

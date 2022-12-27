@@ -6,7 +6,13 @@
       <div class="col-md-12">
           <div class="card">
               <div class="card-header">
-                  <h3>LĨNH VỰC {{ $fieldquestion->id }} </h3>
+                  <h3>LĨNH VỰC 
+                    @if($fieldquestion->id < 10)
+                        0{{ $fieldquestion->id }}
+                    @else
+                        {{ $fieldquestion->id }}
+                    @endif 
+                    </h3>
               </div>
               <div class="card-body">
                       <p class="card-text">Tên lĩnh vực: {{ $fieldquestion->namefield }}</p>

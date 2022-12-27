@@ -26,7 +26,7 @@
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Lĩnh vực</th>
+                                        {{-- <th>Lĩnh vực</th> --}}
                                         <th>Nội dung câu hỏi</th>
                                         {{-- <th>Đáo án đúng</th>
                                         <th>Đáp án sai 1</th> 
@@ -41,7 +41,11 @@
                                     <tr>
                                         <td class="px-4">{{ $loop->iteration }}</td>
                                         {{-- <td class="px-4">{{ $item->id }}</td> --}}
-                                        <td class="px-4">{{ $item->category }}</td>
+                                        {{-- <td class="px-4">{{ $item->category }}
+                                        @foreach ($questions as $cat)
+                                            <a value="{{$cat->id}}">{{$cat->namefield}}</a>   
+                                        @endforeach
+                                        </td> --}}
                                         <td class="px-4">{{ Str::limit($item->question,35) }}</td>
                                         {{-- <td class="px-4">{{ $item->correct_answer }}</td>
                                         <td class="px-4">{{ $item->incorrect1 }}</td>

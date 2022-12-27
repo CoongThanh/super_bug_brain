@@ -18,7 +18,7 @@ class QuestionSeeder extends Seeder
     {
         DB::table('questions')->insert([
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Who are all ________ people?',
                 'correct_answer' => 'those',
                 'incorrect1' => 'this',
@@ -27,7 +27,7 @@ class QuestionSeeder extends Seeder
                 'status' => '0',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Claude is ________',
                 'correct_answer' => 'a French',
                 'incorrect1' => 'Frenchman',
@@ -36,7 +36,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => ' I ____ a car next year.',
                 'correct_answer' => 'am buying',
                 'incorrect1' => 'buy',
@@ -45,7 +45,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'They are all ________ ready for the party',
                 'correct_answer' => 'getting',
                 'incorrect1' => 'going',
@@ -54,7 +54,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'When do you go ________ bed?',
                 'correct_answer' => 'to',
                 'incorrect1' => 'to the',
@@ -63,7 +63,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'London is famous for _____ red buses.',
                 'correct_answer' => '6',
                 'incorrect1' => '9',
@@ -72,7 +72,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Is there _____ milk in the fridge?',
                 'correct_answer' => 'some',
                 'incorrect1' => 'a lot',
@@ -81,7 +81,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'There is a flower shop in front _____ my house.',
                 'correct_answer' => 'of',
                 'incorrect1' => 'to',
@@ -90,7 +90,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Where are _____ children? They go to school.',
                 'correct_answer' => 'the',
                 'incorrect1' => 'you',
@@ -99,7 +99,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Those students are working very _____ for their next exams.',
                 'correct_answer' => 'hard',
                 'incorrect1' => 'hardly',
@@ -108,7 +108,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Jane _____ as a fashion designer becoming a famous singer.',
                 'correct_answer' => 'worked',
                 'incorrect1' => 'is working',
@@ -117,7 +117,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Dan can _____ the drum very well.',
                 'correct_answer' => 'play',
                 'incorrect1' => 'do',
@@ -126,7 +126,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'I know somebody ________ can play the guitar.',
                 'correct_answer' => 'who',
                 'incorrect1' => 'he',
@@ -135,7 +135,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'You look ________ in red!',
                 'correct_answer' => 'very nice',
                 'incorrect1' => 'nicely',
@@ -144,7 +144,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'sd',
                 'correct_answer' => '1',
                 'incorrect1' => '2',
@@ -153,7 +153,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Can you use ________ computer?',
                 'correct_answer' => 'a',
                 'incorrect1' => 'one',
@@ -162,7 +162,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Under no circumstances ________ or exchanged.',
                 'correct_answer' => 'can good be returned',
                 'incorrect1' => 'goods should be returned',
@@ -171,7 +171,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Frank ________ when he case lying on the floor',
                 'correct_answer' => 'was about to leave',
                 'incorrect1' => 'has about to leave',
@@ -180,7 +180,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'He ________ newspapers for ten years.',
                 'correct_answer' => 'has been selling',
                 'incorrect1' => 'is selling',
@@ -189,7 +189,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'This luggage is quite similar to ________.',
                 'correct_answer' => 'that one',
                 'incorrect1' => 'those',
@@ -198,7 +198,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'The doctor showed the new nurse ________ to do.',
                 'correct_answer' => 'what',
                 'incorrect1' => 'that',
@@ -207,7 +207,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'What does he ________ for a living?',
                 'correct_answer' => 'do',
                 'incorrect1' => 'does',
@@ -216,7 +216,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'The murderer was ________ yesterday.',
                 'correct_answer' => 'hung',
                 'incorrect1' => 'hanging',
@@ -225,7 +225,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'Dont let your brothers ________ the present.',
                 'correct_answer' => 'see',
                 'incorrect1' => 'seen',
@@ -234,7 +234,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'No, thank you, I dont ________ sugar in tea.',
                 'correct_answer' => 'put',
                 'incorrect1' => 'eat',
@@ -243,7 +243,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'My cousin ________ bank manager.',
                 'correct_answer' => 'is a',
                 'incorrect1' => 'makes',
@@ -252,7 +252,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '1',
+                'category_id' => '1',
                 'question' => 'She is talking to you. Please listen to ________.',
                 'correct_answer' => 'her',
                 'incorrect1' => 'hers',
@@ -261,7 +261,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Trước khi chơi thể thao chúng ta cần làm gì?',
                 'correct_answer' => 'Khởi động, làm nóng người',
                 'incorrect1' => 'Để tự nhiên',
@@ -270,7 +270,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Môn thể thao nào được coi là môn thể thao "vua"?',
                 'correct_answer' => 'Bóng đá',
                 'incorrect1' => 'Cờ vua',
@@ -279,7 +279,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ nhận bao nhiêu thẻ vàng thì sẽ bằng với 1 thẻ đỏ',
                 'correct_answer' => '2',
                 'incorrect1' => '5',
@@ -288,7 +288,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Trên sân bóng đá có tối đa bao nhiêu cầu thủ',
                 'correct_answer' => '22',
                 'incorrect1' => '14',
@@ -297,7 +297,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ có biệt danh là Vua bóng đá',
                 'correct_answer' => 'Pele',
                 'incorrect1' => 'Cristiano Ronaldo',
@@ -306,7 +306,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Đội tuyển bóng đá có biệt danh "Cơn lốc màu da cam" là',
                 'correct_answer' => 'Hà Lan',
                 'incorrect1' => 'Hy Lạp',
@@ -315,7 +315,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Một trận đấu bóng đá chính thức sẽ kéo dài trong bao lâu?',
                 'correct_answer' => '90 phút',
                 'incorrect1' => '20 phút',
@@ -324,7 +324,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Việt Nam đã tham dự VCK World Cup bao nhiêu lần?',
                 'correct_answer' => '0',
                 'incorrect1' => '1',
@@ -333,7 +333,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Thủ môn được sử dụng tay tại vị trí nào trên sân?',
                 'correct_answer' => 'Vòng cấm',
                 'incorrect1' => 'Bất cứ vị trí nào',
@@ -342,7 +342,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ ghi bàn nhiều nhất tại các kì World Cup',
                 'correct_answer' => 'Miroslav Klose',
                 'incorrect1' => 'Fernando Torres',
@@ -351,7 +351,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ nhận giải Quả bóng vàng Việt Nam năm 2020 là',
                 'correct_answer' => 'Nguyễn Văn Quyết',
                 'incorrect1' => 'Nguyễn Trọng Hoàng',
@@ -360,7 +360,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Đội tuyển quốc gia vô địch World Cup 2014 là',
                 'correct_answer' => 'Đức',
                 'incorrect1' => 'Pháp',
@@ -369,7 +369,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ nhận giải thưởng FIFA The Best 2020 là',
                 'correct_answer' => 'Robert Lewandowski',
                 'incorrect1' => 'Cristiano Ronaldo',
@@ -378,7 +378,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Thành tích của đội tuyển Việt Nam tại VCK U23 Châu Á 2018',
                 'correct_answer' => 'Á quân',
                 'incorrect1' => 'Vô địch',
@@ -387,7 +387,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'CLB vô địch Champions League 2020 là',
                 'correct_answer' => 'Bayern Munich',
                 'incorrect1' => 'Manchester United',
@@ -396,7 +396,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'U23 Việt Nam đã đánh bại ai tại chung kết SEA GAMES 2019',
                 'correct_answer' => 'Indonesia',
                 'incorrect1' => 'Thái Lan',
@@ -405,7 +405,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ Việt Nam nào từng thi đấu cho CLB SC Heereveen',
                 'correct_answer' => 'Đoàn Văn Hậu',
                 'incorrect1' => 'Nguyễn Công Phượng',
@@ -414,7 +414,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ Alphonso Davies mang quốc tịch gì',
                 'correct_answer' => 'Canada',
                 'incorrect1' => 'Liberia',
@@ -423,7 +423,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Đội chủ nhà của World Cup 1998 là',
                 'correct_answer' => 'Pháp',
                 'incorrect1' => 'Đức',
@@ -432,7 +432,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cristiano Ronaldo chưa từng thi đấu cho CLB nào sau đây',
                 'correct_answer' => 'Benfica',
                 'incorrect1' => 'Juventus',
@@ -441,7 +441,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'CLB nào vô địch Ngoại Hạng Anh nhiều nhất?',
                 'correct_answer' => 'Manchester United',
                 'incorrect1' => 'Chelsea',
@@ -450,7 +450,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Đôi tuyển việt nam vô địch AFF CUP vào những năm nào ?',
                 'correct_answer' => 'năm 2008, 2018',
                 'incorrect1' => 'năm 2008, 2018, 2019',
@@ -459,7 +459,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ nào dưới đây thuộc biên chế clb Chelsea hiện nay ?',
                 'correct_answer' => 'Trevoh Chalobah',
                 'incorrect1' => 'Allan Saint-Maximin',
@@ -468,7 +468,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Eduardo Camavinga đang thuộc biên chế clb nào ?',
                 'correct_answer' => 'Real Madrid',
                 'incorrect1' => 'Barcelona',
@@ -477,7 +477,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Vua phá lưới world cup 2018 là ai ?',
                 'correct_answer' => 'Harry Kane',
                 'incorrect1' => 'Mario Mandžukić',
@@ -486,7 +486,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cầu thủ đắt giá nhất hiện nay là ai ?',
                 'correct_answer' => 'Lukaku',
                 'incorrect1' => 'Mbappe',
@@ -495,7 +495,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Tiền đạo xuất sắc nhất lịch sử Brazil là ai ?',
                 'correct_answer' => 'Pelé',
                 'incorrect1' => 'Ronaldo de Lima',
@@ -504,7 +504,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Chủ nhân của Ballon dOr 1988 là ai ?',
                 'correct_answer' => 'Marco van Basten',
                 'incorrect1' => 'Ruud Gullit',
@@ -513,7 +513,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Nhà vô địch Ngoại Hạng Anh năm 2008 là clb nào ?',
                 'correct_answer' => 'Manchester United',
                 'incorrect1' => 'Manchester City',
@@ -522,7 +522,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Hlv nào dưới đây từng dẫn dắt Manchester United ?',
                 'correct_answer' => 'David Moyes',
                 'incorrect1' => 'Zinédine Zidane',
@@ -531,7 +531,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '2',
+                'category_id' => '2',
                 'question' => 'Cặp trung vệ hay nhất hiện nay',
                 'correct_answer' => 'Leonardo Bonucci -Giorgio Chiellini',
                 'incorrect1' => 'Marquinhos-Presnel Kimpembe',
@@ -540,7 +540,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ],
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Công thức dùng để tính nồng độ phần trăm của dung dịch',
                 'correct_answer' => 'C% = mct/mdd . 100%',
                 'incorrect1' => 'C% = mdd/mct . 100%',
@@ -549,7 +549,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Phản ứng xảy ra khi nước tác dụng với oxit axit tạo thành dung dịch axit:',
                 'correct_answer' => 'H2O + N2O5 -> HNO3',
                 'incorrect1' => 'H2O + Ca -> Ca(OH)2 + H2',
@@ -558,7 +558,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Dãy chất nào sau đây tác dụng được với O2?',
                 'correct_answer' => 'SO2, Fe, S',
                 'incorrect1' => 'CaO, Ca, Mg',
@@ -567,7 +567,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Dãy chất sau đây tác dụng được với nước',
                 'correct_answer' => 'Ba, Na2O, SO3',
                 'incorrect1' => 'Li, ZnO, P2O5',
@@ -576,7 +576,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'ở nhiệt độ xác định, dung dịch bão hòa là',
                 'correct_answer' => 'dung dịch không thể hòa tan chất tan',
                 'incorrect1' => 'dung dịch có thể hòa tan thê chất tan',
@@ -585,7 +585,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Khi giảm nhiệt độ và tăng áp suất thì độ tan của chất khí trong nước:',
                 'correct_answer' => 'tăng',
                 'incorrect1' => 'có thể tăng và có thể giảm',
@@ -594,7 +594,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Dãy chất nào sau đây là axit:',
                 'correct_answer' => 'HBr, HNO3, H2SO3, H3PO4',
                 'incorrect1' => 'HCl, NaOH, Fe2(SO4)3, H2SO4',
@@ -603,7 +603,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Hòa tan 150 ml rượu etylic (cồn) vào 100ml nước cất thu được dung dịch rượu',
                 'correct_answer' => 'chất tan là nước, dung môi là rượu etylic',
                 'incorrect1' => 'cả hai chất vừa là chất tan, vừa là dung môi',
@@ -612,7 +612,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Khối lượng chất tan cần dùng để pha chế 40 gam dung dịch MgCl2 có nồng độ 6%',
                 'correct_answer' => '2,4g',
                 'incorrect1' => '666,6g',
@@ -621,7 +621,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Hầu hết các chất rắn, độ tan trong nước tăng khi nhiệt độ',
                 'correct_answer' => 'tăng',
                 'incorrect1' => 'có thể tăng và có thể giảm',
@@ -630,7 +630,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Dãy chất là muối trung hòa:',
                 'correct_answer' => 'CaCl2, Fe2(SO4)3, ZnS, Na2CO3',
                 'incorrect1' => 'Ba(H2PO4)2, Na2SO4, ZnCl2, KHCO3',
@@ -639,7 +639,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Công thức dùng để tính số mol chất tan khi biết nồng độ mol là:',
                 'correct_answer' => 'n = CM.V',
                 'incorrect1' => 'n = V/22,4',
@@ -648,7 +648,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'hòa tan 20 gam muối ăn NaCl vào 60 gam nước. Nồng độ phần trăm của dung dịch là:',
                 'correct_answer' => '25%',
                 'incorrect1' => '30%',
@@ -657,7 +657,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Dung dịch là hỗn hợp:',
                 'correct_answer' => 'đồng nhất của chất tan và dung môi',
                 'incorrect1' => 'Của chất rắn, chất lỏng và chất khí trong dung môi',
@@ -666,7 +666,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Dãy chất nào sau đây là Bazơ',
                 'correct_answer' => 'Ca(OH)2, LiOH, NaOH, Al(OH)3',
                 'incorrect1' => 'Ba(H2PO4)2, Na2SO4, ZnCl2, KHCO3',
@@ -675,7 +675,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Hầu hết các chất rắn, độ tan trong nước giảm khi nhiệt độ:',
                 'correct_answer' => 'giảm',
                 'incorrect1' => 'không tan và cũng không giảm',
@@ -684,7 +684,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Trộn 10ml dầu ăn vào 20ml nước ( ở nhiệt độ phòng), thu được:',
                 'correct_answer' => 'hỗn hợp dầu văn với nước',
                 'incorrect1' => 'dung dịch chưa bão hòa',
@@ -693,7 +693,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Dãy chất sau đây tác dụng được với nước (ở điều kiện thường)',
                 'correct_answer' => 'Na2O, K, SO3',
                 'incorrect1' => 'Ca, Al, Cu',
@@ -702,7 +702,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Ở nhiệt độ xác định, dung dịch chưa bão hòa là',
                 'correct_answer' => 'dung dịch có thể hòa tan thêm chất tan',
                 'incorrect1' => 'dung dịch không thể hòa tan thêm chất tan',
@@ -711,7 +711,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '3',
+                'category_id' => '3',
                 'question' => 'Công thức dùng để tính nồng độ mol của dung dịch:',
                 'correct_answer' => 'CM = n/V',
                 'incorrect1' => 'CM = n.V',
@@ -720,7 +720,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Hệ điều hành thuộc loại phần mềm nào?',
                 'correct_answer' => 'Phần mềm hệ thống',
                 'incorrect1' => 'Phần mềm kế toán',
@@ -729,7 +729,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Phương án nào sau đây không đảm bảo an toàn khi sử dụng mật khẩu?',
                 'correct_answer' => 'Dùng một mật khẩu duy nhất cho nhiều trang web khác nhau',
                 'incorrect1' => 'Tạo mật khẩu có độ dài ít nhất 8 ký tự bao gồm chữ cái, chữ số, kí tự đặc biệt',
@@ -738,7 +738,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Trong các phương tiện sau, đâu là phương tiện truyền dẫn không dây?',
                 'correct_answer' => 'Sóng truyền qua vệ tinh',
                 'incorrect1' => 'Cáp đồng trục',
@@ -747,7 +747,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Thông tin khi đưa vào máy tính, chúng đều được biến đổi thành dạng chung đó là?',
                 'correct_answer' => 'Dãy bít',
                 'incorrect1' => 'Hình ảnh',
@@ -756,7 +756,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Đơn vị nào không dùng để đo dung lượng bộ nhớ trong?',
                 'correct_answer' => 'Megahertz',
                 'incorrect1' => 'Kilobyte',
@@ -765,7 +765,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Trong các loại phần mềm sau, phần mềm nào thuộc phần mềm hệ thống?',
                 'correct_answer' => 'Phần mềm TurboPascal',
                 'incorrect1' => 'Phần mềm duyệt web',
@@ -774,7 +774,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Email là gì?',
                 'correct_answer' => 'Thư điện tử',
                 'incorrect1' => 'Instagram',
@@ -783,7 +783,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Công dụng của Email là gì?',
                 'correct_answer' => 'Gửi và nhận thư qua mạng máy tính',
                 'incorrect1' => 'Diệt virus máy tính',
@@ -792,7 +792,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Phần mềm nào sau đây không phải là phần mềm hệ thống?',
                 'correct_answer' => 'TeamViewer',
                 'incorrect1' => 'Windows 7',
@@ -801,7 +801,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Trong Tin học, tệp (tập tin) là khái niệm chỉ?',
                 'correct_answer' => 'Một đơn vị lưu trữ thông tin trên bộ nhớ ngoài',
                 'incorrect1' => 'Một trang Web',
@@ -810,7 +810,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Phần mềm nào sau đây dùng để xử lý văn bản?',
                 'correct_answer' => 'Microsoft Word',
                 'incorrect1' => 'Microsoft Excel',
@@ -819,7 +819,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Người sử dụng có thể giao tiếp với máy tính bằng cách nào trong các cách sau đây?',
                 'correct_answer' => 'Đưa vào các lệnh (Command) hoặc chọn trên bảng chọn (Menu)',
                 'incorrect1' => 'Chỉ bằng "giọng nói"',
@@ -828,7 +828,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Virus máy tính là gì?',
                 'correct_answer' => 'Chương trình máy tính có khả năng tự lây lan',
                 'incorrect1' => 'Virus sinh học lây lan qua việc sử dụng chung bàn phím',
@@ -837,7 +837,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Mozilla Firefox là phần mềm gì?',
                 'correct_answer' => 'Trình duyệt web',
                 'incorrect1' => 'Phần mềm trò chơi',
@@ -846,7 +846,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Phần mềm Photoshop dùng để làm gì?',
                 'correct_answer' => 'Chỉnh sửa và biên tập ảnh',
                 'incorrect1' => 'Cắt ghép video',
@@ -855,7 +855,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'phần cứng của một hệ thống máy tính bao gồm?',
                 'correct_answer' => 'Máy tính và các thiết bị vật lí liên quan',
                 'incorrect1' => 'Bộ xử lí trung tâm(CPU)',
@@ -864,7 +864,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Hãy chỉ ra tên của thiết bị mạng?',
                 'correct_answer' => 'Modem',
                 'incorrect1' => 'Printer',
@@ -873,7 +873,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Chọn khẳng định đúng, khả năng xử lý của máy tính phụ thuộc vào?',
                 'correct_answer' => 'Tốc độ CPU, dung lượng bộ nhớ RAM, dung lượng và tốc độ ổ cứng',
                 'incorrect1' => 'Dung lượng bộ nhớ ngoài',
@@ -882,7 +882,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Mạng xã hội bao gồm?',
                 'correct_answer' => 'Facebook, Twitter, Instagram, Tumblr',
                 'incorrect1' => 'Hộp thư điện tử',
@@ -891,7 +891,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Hệ nhị phân dùng mấy ký tự để biểu diễn các số?',
                 'correct_answer' => '2',
                 'incorrect1' => '10',
@@ -900,7 +900,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Chọn khẳng định đúng, bản quyền là?',
                 'correct_answer' => 'Quyền tác giả',
                 'incorrect1' => 'Quyền được sao chép',
@@ -909,7 +909,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Chức năng chính của thương mại điện tử dùng để?',
                 'correct_answer' => 'Mua bán qua mạng',
                 'incorrect1' => 'Gửi tệp tin đính kèm',
@@ -918,7 +918,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Để quản lý tệp và thư mục ta dùng chương trình nào?',
                 'correct_answer' => 'Windows Explorer',
                 'incorrect1' => 'Internet Explorer',
@@ -927,7 +927,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Mật khẩu nào sau đây là khó phá nhất đối với 1 hacker?',
                 'correct_answer' => 'p@ssWord123',
                 'incorrect1' => 'password',
@@ -936,7 +936,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Người dùng và máy tính giao tiếp với nhau thông qua?',
                 'correct_answer' => 'Hệ điều hành',
                 'incorrect1' => 'Modem',
@@ -945,7 +945,7 @@ class QuestionSeeder extends Seeder
                 'status' => '1',
             ], 
             [
-                'category' => '4',
+                'category_id' => '4',
                 'question' => 'Máy tính đọc dữ liệu nhanh nhất từ đâu?',
                 'correct_answer' => 'Đĩa cứng',
                 'incorrect1' => 'Đĩa mềm',
@@ -953,7 +953,6 @@ class QuestionSeeder extends Seeder
                 'incorrect3' => 'Internet',
                 'status' => '1',
             ], 
-
         ]);
     }
 }

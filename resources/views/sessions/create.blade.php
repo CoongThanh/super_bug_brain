@@ -81,9 +81,7 @@
                                                 class="text-primary text-gradient font-weight-bold">Đăng ký</a>
                                         </p> --}}
                                         <p class="text-sm text-center">
-                                            Quên mật khẩu? Đặt lại mật khẩu của bạn
-                                            <a href="{{ route('verify') }}"
-                                                class="text-primary text-gradient font-weight-bold">Tại đây</a>
+                                            <i>Vui lòng nhập tài khoản đã được cung cấp </i>
                                         </p>
                                     </form>
                                 </div>

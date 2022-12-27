@@ -5,16 +5,21 @@
   <div class="row">
       <div class="col-md-12">
           <div class="card">
-              <div class="card-header">
-                 
-                  <h3>Tài khoản {{ $account->id }} </h3>
+              <div class="card-header">          
+                  <h3>TÀI KHOẢN
+                    @if($account->id < 10)
+                      0{{ $account->id }}
+                    @else
+                      {{ $account->id }}
+                    @endif 
+                  </h3>
               </div>
               <div class="card-body">
                       <p class="card-text">Tên tài khoản: {{ $account->name }}</p>
                       {{-- <p class="card-text">Ảnh đại diện: </p>
-                      <img src="{{ $account->image }}" alt="Loading..." style="width:150;height:150;">
+                      <img src="{{ $account->image }}" alt="Loading..." style="width:150;height:150;">--}}
                       <p class="card-text">Email: {{ $account->email }}</p>
-                      <p class="card-text">Mật khẩu: {{ $account->password }}</p> --}}
+                      {{-- <p class="card-text">Mật khẩu: {{ $account->password }}</p>  --}}
                       {{-- <p class="card-text">Điểm: {{ $account->point }}</p>
         
                         @if ($account->ranker==1)

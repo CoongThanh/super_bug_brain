@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
 
         // Lưu ý thứ tự khi có khóa ngoại
         $this-> call([
-            QuestionSeeder::class,
             FieldQuestionSeeder::class,
+            QuestionSeeder::class,          
             UserSeeder::class,
             AccountSeeder::class,
         ]);

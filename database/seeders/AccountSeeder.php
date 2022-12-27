@@ -19,6 +19,13 @@ class AccountSeeder extends Seeder
     {
         DB::table('accounts')->insert([
             [
+                'name' => 'Admin',
+                'email' => 'administrator@gmail.com',
+                'password' => Hash::make('123456'),
+                'role' => '1',
+                'status' => '1',
+            ],
+            [
                 'name' => 'Quang Qui',
                 'email' => 'quangqui@gmail.com',
                 'password' => Hash::make('123456'),
@@ -30,14 +37,14 @@ class AccountSeeder extends Seeder
                 'email' => 'congthanh@gmail.com',
                 'password' => Hash::make('123456'),
                 'role' => '1',
-                'status' => '0',
+                'status' => '1',
             ],
             [
                 'name' => 'Đức Trọng',
                 'email' => 'ductrong@gmail.com',
                 'password' => Hash::make('123456'),
                 'role' => '1',
-                'status' => '0',
+                'status' => '1',
             ],
         ]);
     }
