@@ -96,10 +96,13 @@
                                                 {{ csrf_field() }}
                                                 @if ($item->status== 1)
                                                 <input type="hidden" name="status" id="status" value="0">
+                                                
+                                                <button type="submit" onclick="return confirm('Are you sure to Close it?')" class="btn btn-danger btn-sm"> Đóng</button>
                                                 @else
                                                 <input type="hidden" name="status" id="status" value="1">
+                                                <button type="submit" onclick="return confirm('Are you sure to Open it?')" class="btn btn-danger btn-sm"> Mở</button>
+                                               
                                                 @endif
-                                                <button type="submit" onclick="return confirm('Are you sure to Close/Open it?')" class="btn btn-danger btn-sm"> Khóa/Mở</button>
                                             </form>
                                            
                                         </td>
