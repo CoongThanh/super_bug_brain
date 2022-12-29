@@ -2,7 +2,13 @@
 @section('content-account')
 <div class="card">
   <div class="card-header">
-    <h3>Chỉnh sửa tài khoản</h3>
+    <h3>TÀI KHOẢN
+      @if($account->id < 10)
+      0{{ $account->id }}
+    @else
+      {{ $account->id }}
+    @endif 
+      </h3>
   </div>
   <div class="card-body">
       

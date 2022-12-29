@@ -2,7 +2,13 @@
 @section('content-question')
 <div class="card">
   <div class="card-header">
-    <h3>CÂU HỎI {{ $questions->id }}</h3>
+    <h3>CÂU HỎI 
+      @if($questions->id < 10)
+        0{{ $questions->id }}
+      @else
+        {{ $questions->id }}
+      @endif 
+    </h3>
   </div>
   <div class="card-body">
       
